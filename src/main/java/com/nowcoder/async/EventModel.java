@@ -14,17 +14,20 @@ public class EventModel {
     private int entityId;   //评论的哪个题目的id
     private int entityOwnerId;  //这个题目是谁发布
 
+    //扩展字段
     private Map<String,String> exts = new HashMap<String,String>();
 
     public EventModel(){
 
     }
 
+    //方便设置字段
     public EventModel setExt(String key, String value){
         exts.put(key, value);
         return this;
     }
 
+    //方便读取字段
     public String getExt(String key){
         return exts.get(key);
     }
