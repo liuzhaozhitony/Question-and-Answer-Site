@@ -100,7 +100,7 @@ public class LoginController {
             }
 
         } catch (Exception e) {
-            logger.error("登陆异常" + e.getMessage());
+            logger.error("登陆异常" + e);
             return "login";
         }
     }

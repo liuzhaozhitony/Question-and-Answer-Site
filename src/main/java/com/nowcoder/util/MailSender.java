@@ -31,7 +31,7 @@ public class MailSender implements InitializingBean {
                                         String template, Map<String, Object> model) {
         try {
             String nick = MimeUtility.encodeText("Tony问答管理员");
-            InternetAddress from = new InternetAddress(nick + "<403930619@qq.com>");
+            InternetAddress from = new InternetAddress(nick + "<liuzhaozhitony@163.com>");
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
             String result = VelocityEngineUtils
