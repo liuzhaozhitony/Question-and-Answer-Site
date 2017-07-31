@@ -85,9 +85,9 @@ public class LoginController {
                 }
                 response.addCookie(cookie);
 
-                eventProducer.fireEvent(new EventModel(EventType.LOGIN)
-                        .setExt("username",username).setExt("email","403930619@qq.com")
-                        .setActorId(Integer.parseInt(map.get("userId"))));
+//                eventProducer.fireEvent(new EventModel(EventType.LOGIN)
+//                        .setExt("username",username).setExt("email","liuzhaozhitony@163.com")   //收件邮箱地址
+//                        .setActorId(Integer.parseInt(map.get("userId"))));
 
                 if (StringUtils.isNotBlank(next)) {
                     return "redirect:" + next;
