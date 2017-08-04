@@ -173,7 +173,7 @@ public class FollowController {
             vo.set("user", user);
             vo.set("commentCount", commentService.getUserCommentCount(uid));
             vo.set("followerCount", followService.getFollowerCount(EntityType.ENTITY_USER, uid));
-            vo.set("followeeCount", followService.getFolloweeCount(EntityType.ENTITY_USER, uid));
+            vo.set("followeeCount", followService.getFolloweeCount(uid,EntityType.ENTITY_USER));
             if (localUserId != 0) {
                 vo.set("followed", followService.isFollower(localUserId, EntityType.ENTITY_USER, uid));
             } else {
