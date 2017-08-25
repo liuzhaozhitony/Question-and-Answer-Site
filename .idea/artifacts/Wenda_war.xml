@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Wenda:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="wenda-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Wenda:war exploded" />
+    </root>
+  </artifact>
+</component>
